@@ -59,6 +59,11 @@ main blockquote {
   padding-left: 1rem;
   border-left: 1px solid #003e60;
 }
+.centered-image {
+  display: flex;
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+}
   /* Format Header */
   header {
     text-align: center;
