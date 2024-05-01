@@ -1,4 +1,8 @@
-  
+  /* Format body*/ 
+  body {
+    color: #efefef; 
+    background-color: #121212; 
+  }
   /* Format navigation */
   nav {
     font-size: 1.15rem;
@@ -11,7 +15,6 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #003e60;  
     display: flex;
     justify-content: center;
     width:100%;
@@ -21,26 +24,28 @@
   }
   nav li a {
     display: block;
-    color: #ffffff;
+    color: #efefef;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   nav li a:hover {
-    background-color: darkgrey
+    background-color: #4682B4;
   }
   nav .active {
     text-decoration: underline;
   }
-  /* Format Main */
+
+/* Format Main */
   main {
     display: flex;
+    margin: auto; 
+    max-width: 40em;
     min-height: 100vh;
     flex-direction: column;
     flex: 1;
     margin: 0 auto;
-    max-width: 50rem;
-    padding: 0 0.5rem;
+    padding: 0 1.618rem;
     overflow-x: hidden;
     word-break: break-word;
     overflow-wrap: break-word;
@@ -79,4 +84,11 @@ main blockquote {
   .small {
     font-size: .8rem;
     color: grey;
+  }
+  /* Footer Format*/
+  footer {    
+    font-size: .85rem;
+    line-height: 2;
+    margin: auto;
+    text-align: center;
   }
