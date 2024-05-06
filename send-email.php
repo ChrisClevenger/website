@@ -5,9 +5,9 @@ $email = $_POST["email"];
 $subject = $_POST["subject"]; 
 $message = $_POST["message"]; 
 
-require "PHPMailer/src/Exception.php"; 
-require "PHPMailer/src/SMTP.php"; 
-require "PHPMailer/src/PHPMailer.php";
+require "home/chrirhhz/public_html/PHPMailer/src/Exception.php"; 
+require "home/chrirhhz/public_html/PHPMailer/src/SMTP.php"; 
+require "home/chrirhhz/public_html/PHPMailer/src/PHPMailer.php";
 
 use PHPMailer\PHPMailer\PHPMailer; 
 use PHPMailer\PHPMailer\SMTP; 
