@@ -5,13 +5,34 @@ $email = $_POST["email"];
 $subject = $_POST["subject"]; 
 $message = $_POST["message"]; 
 
-$mailheader = "From:".$name." <".$email.">\r\n"; 
+require "PHPMailer/src/Exception.php"; 
+require "PHPMailer/src/SMTP.php"; 
+require "PHPMailer/src/PHPMailer.php";
 
-$recipient = "contact@chrisclevenger.com"; 
+use PHPMailer\PHPMailer\PHPMailer; 
+use PHPMailer\PHPMailer\SMTP; 
+use PHPMailer\PHPMailer\Exception; 
 
-mail($recipient, $subject, $message, $mailheader)
-or die("Error!"); 
+$mail = new PHPMailer(true); 
 
-echo"message sent";
+$mail->isSMTP(); 
+$mail->SMTPAuth = true; 
+
+$mail->Host = "mail.chrisclevenger.com"; // corrected the typo
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port = 587; 
+
+$mail->Username = "mail@chrisclevenger.com"; 
+$mail->Password = "Tr9141901!"; 
+
+$mail->setFrom($email, $name); 
+$mail->addAddress("contact@chrisclevenger.com", "Chris"); 
+
+$mail->Subject = $subject;
+$mail->Body = $message; 
+
+$mail->send(); 
+
+echo "email sent"; 
 
 ?>
