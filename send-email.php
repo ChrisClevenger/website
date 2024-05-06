@@ -18,7 +18,7 @@ $mail = new PHPMailer(true);
 $mail->isSMTP(); 
 $mail->SMTPAuth = true; 
 
-$mail->Host = "mail.chrisclevenger.com"; // corrected the typo
+$mail->Host = "mail.privateemail.com"; // Changed SMTP host to namecheap option 
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587; 
 
