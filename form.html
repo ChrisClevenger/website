@@ -20,22 +20,22 @@
         <body>
             <h1>Contact</h1>
 
-           <form method="POST" action="send-email.php">
+           <form method="POST" action="https://api.web3forms.com/submit">
+
+                <input type="hidden" name="access_key" value="ada7d3d7-b80e-40f2-9477-0b549a757a1e">
+
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" required>
 
                 <label for="email">email</label>
-                <input type="email" name="email" id="email" required>
-
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" required>
+                <input type="email" name="email" required>
 
                 <label for="message">Message</label>
                 <textarea name="message" id="message" required></textarea>
 
-                <br>
+                <input type="hidden" name="redirect" value="https://chrisclevenger.com">
 
-                <button>Send</button>
+                <button type="submit">Send</button>
 
            </form>
 
