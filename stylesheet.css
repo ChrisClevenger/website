@@ -92,3 +92,32 @@ main blockquote {
     margin: auto;
     text-align: center;
   }
+
+  /* Format Form */
+  form {
+    display: flex; 
+    flex-direction: column;
+    width: 80%; /* Adjusted width for smaller screens */
+    margin: 20px auto 0; 
+    font-size: 1.15rem;
+    line-height: 1.618rem;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%; /* Adjusted to full width */
+    margin-bottom: 10px; 
+    padding: 5px; 
+    box-sizing: border-box; 
+  }
+  
+  form textarea {
+    height: 150px; /* Reduced height for better mobile experience */
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* Adjustments for larger screens */
+    form {
+      width: 500px; /* Your original width */
+    }
+  }

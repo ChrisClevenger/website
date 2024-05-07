@@ -18,6 +18,16 @@
     </head>
 
         <body>
+            <nav>
+                <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="now">Now</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="form" class="active">Contact</a></li>
+                </ul>
+              </nav>
+            <main>
             <h1>Contact</h1>
 
            <form method="POST" action="https://api.web3forms.com/submit">
@@ -27,7 +37,7 @@
                 <label for="name">Name</label>
                 <input type="text" name="name" required>
 
-                <label for="email">email</label>
+                <label for="email">Email</label>
                 <input type="email" name="email" required>
 
                 <label for="message">Message</label>
@@ -38,6 +48,7 @@
                 <button type="submit">Send</button>
 
            </form>
+            </main>
 
         </body>
 </html>
